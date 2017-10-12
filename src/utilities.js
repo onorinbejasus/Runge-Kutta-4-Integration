@@ -126,6 +126,7 @@ const Utilities = function(){
 
     /* Utilities for checking model conditions and create elements */
     Model_Utils : function() {
+      return{
           createParticle: function(position, velocity) {
             /* Clone the particle template*/
             let particle = _.cloneDeep(particle_def);
