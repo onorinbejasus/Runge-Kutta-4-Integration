@@ -1,9 +1,9 @@
-#Runge-Kutta-4-Integration
+# Runge-Kutta-4-Integration
 
-##Library Requirements:
+## Library Requirements:
 * Lodash (https://lodash.com/)
 
-##Files:
+## Files:
 * utilities.js
     * Vector Math Library I implemented that the integration code relies on (you're welcome!)
     * Model Utility Library that creates particles
@@ -21,7 +21,7 @@
 <script type="application/javascript" src="src/integration_schemes.js"></script>
 ```
 
-##Usage:
+## Usage:
 The integration schemes are implemented as a static library. Both functions take a particles object (
 ```javascript
 { position:[0,0], velocity:{x:0,y:0}, forces: {x:0,y:0}, mass: 1.0/*kg*/, radius: 25.0} )
@@ -36,7 +36,7 @@ Integration.euler_step(p, 1.0/33.0);
 Integration.RK4_step(p, 1.0/33.0);
 ```
 
-##Implementation:
+## Implementation:
 
 ```javascript
 function RK4(p, dt) {
